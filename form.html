@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+</head>
+<style>
+    .heading {
+        text-align: center;
+        color: black;
+    }
+
+    .paragraph {
+        text-align: center;
+        color:dimgrey;
+    }
+
+    .container {
+        text-align: center;
+        background-image: url("background-image.jpg");
+        background-size: contain;
+        background-position: center;
+        border-radius: 15px;
+        border-color: black;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        margin: 10% auto;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    body {
+        background-image: url("https://static.vecteezy.com/system/resources/previews/008/693/230/non_2x/10-colorful-memphis-modern-abstract-shapes-cute-pink-with-hexagon-backgrounds-eps-vector.jpg");
+
+        background-size: 900px;
+        background-position: center;
+    }
+
+    .container {
+        float: center;
+        width: 33.33%;
+        padding: 5px;
+    }
+    .container {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .container{
+
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+</style>
+
+<body>
+    <div>
+    <div class="container" onsubmit="registerUser()">
+    <h2 class="heading">BOOK A CALL</h2>
+    <h5 class="paragraph">Book a call slot and our representative will call you within 1hr of selected time</h5>
+        <form action="#">
+            Name: <input type="text" id="Name" placeholder="enter your name">
+            <br> <br>
+            Email: <input type="text" id="Email" placeholder="enter your email">
+            <br> <br>
+            Phone: <input type="text" id="Phone" placeholder="enter your phone number ">
+            <br> <br>
+            Time for call: <input type="date"> <input type="time">
+            <br> <br>
+            <input type="button" value="Get a call">
+
+        </form>
+
+    </div>
+    <script>
+
+        function registerUser(){
+           const =document.getElementById('Name').value;
+
+           console.log(Name)
+        }
+ 
+    </script>
+</body>
+
+</html>
